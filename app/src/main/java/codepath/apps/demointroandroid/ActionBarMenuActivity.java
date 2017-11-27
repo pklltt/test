@@ -40,6 +40,7 @@ public class ActionBarMenuActivity extends Activity {
 		break;
 	  }
 	  return true;
+	  throw new RuntimeException("This is a crash");
 	}
 	
 
