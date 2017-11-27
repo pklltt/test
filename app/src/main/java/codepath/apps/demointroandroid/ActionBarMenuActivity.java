@@ -27,7 +27,7 @@ public class ActionBarMenuActivity extends Activity {
 	
 	
 	@Override
-	public void onOptionsItemSelected(MenuItem item) {
+	public boolean onOptionsItemSelected(MenuItem item) {
 	  switch (item.getItemId()) {
 	  case R.id.menu_toast:
 		Toast.makeText(this, "Toasted", Toast.LENGTH_SHORT).show();
