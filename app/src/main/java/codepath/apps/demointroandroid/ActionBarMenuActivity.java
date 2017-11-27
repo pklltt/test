@@ -27,7 +27,7 @@ public class ActionBarMenuActivity extends Activity {
 	
 	
 	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
+	public void onOptionsItemSelected(MenuItem item) {
 	  switch (item.getItemId()) {
 	  case R.id.menu_toast:
 		Toast.makeText(this, "Toasted", Toast.LENGTH_SHORT).show();
@@ -40,7 +40,6 @@ public class ActionBarMenuActivity extends Activity {
 		break;
 	  }
 	  throw new RuntimeException("This is a crash");
-	  return true;
 	}
 	
 
